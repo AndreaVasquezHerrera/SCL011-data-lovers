@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Boogaloo&display=swap");
+*
+
+/*botones filtrar*/
+.button{
+  text-align: left;
+  margin: 10%;
+}
+
+.botton{
+    color:rgb(17, 230, 250);
+    font-family:'Boogaloo', cursive;
+    font-size: large;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 2px 7px 2px 7px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:rgb(92, 255, 28);
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+
+    }
+    
+  .botton:hover{
+    background-color: rgba(14, 197, 197, 0.705);
+    color: #ffffff;
+  }
+
+
+  
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background: url("imagenes/fondoazul.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/*slider automatico*/
+
+.slider {
+  
+	width: 95%;
+	margin: auto;
+  overflow: hidden;
+  
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 30%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+nav {
+  position:relative;
+  top:200px;
+  left:50px;
+}
+
+
+
+
+/*tarjetas data*/
+.card{
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  padding: 0.9rem 0;
+  border-radius: 1rem;
+  width: 50vh;
+  height: 65vh;
+  background-color:black;
+  font-family:'Boogaloo', cursive; 
+  font-size: large;
+  text-align: center;
+  text-overflow:inherit;
+      color:rgb(12, 238, 219);
+      flex-direction: row;
+      flex-flow: column;
+}
+
+
+/*imagen tarjeta*/
+img#imagen{
+  width: 80%;
+  height: 90%;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
