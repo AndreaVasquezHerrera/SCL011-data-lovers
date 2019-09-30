@@ -4,6 +4,7 @@ const card = document.getElementById("rick-mory-card");
 const buttonRicks = document.getElementById("button-ricks");
 const buttonMorty = document.getElementById("button-morty");
 const buttonOtrosPersonajes = document.getElementById("button-otrosPersonajes");
+const odrenar = document.getElementById("ordenar");
 
 
 //Muestra lista de todos los personajes en tarjetas
@@ -77,7 +78,14 @@ let resultOtrosPersonajes = (data) => {
     
 }
 
-
 buttonOtrosPersonajes.addEventListener('click', () => {
     resultOtrosPersonajes(data)
 });
+
+//para ordenar lista 
+odrenar.addEventListener("change", () => {
+    let az =odrenar.value;
+    let orderResult = window.dataManager.orderAz(data,az);
+    dataSee(orderResult);
+    }
+    )

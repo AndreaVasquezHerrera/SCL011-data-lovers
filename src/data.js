@@ -16,7 +16,35 @@ window.dataManager = {
   return items;
   
  },
-  
-}  
+
+
+ //Ordena lista alfabeticamente
+
+  orderAz : (data,az)=>{
+    if (az == "A-Z"){
+      const resulta= data.sort((a,b)=>{
+          if (a.name.toLowerCase() < b.name.toLowerCase()
+          ) return -1;
+          if (a.name.toLowerCase() > b.name.toLowerCase()
+          ) return 1;
+          return 0;
+      });
+      return resulta;
+  }
+  else {
+      const resulta= data.sort((a,b)=>{
+          if (a.name.toLowerCase() > b.name.toLowerCase()
+          ) return -1;
+          if (a.name.toLowerCase() < b.name.toLowerCase()
+          ) return 1;
+          return 0;
+      });
+      return resulta;
+  }
+  },
+}    
+
+    
+
 
 
